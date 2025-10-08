@@ -1,20 +1,19 @@
-nums = [2,1,5,0,4,6]
+# nums = [5,4,3,2,1]
+# nums = [2,1,5,0,4,6]
+# nums = [1,2,3,4,5]
+nums = [20,100,10,12,5,13]
 
-# for i in range(len(nums)):
-# 	for j in range(i+1,len(nums)):
-# 		for k in range(j+1, len(nums)):
-# 			if nums[i] < nums[j] < nums[k]:
-# 				print(True)
-# 				break
+if len(nums) < 3:
+	print(False)
+i = float('inf')
+j = float('inf')
 
-for i in range(len(nums)):
-    if nums[i] < nums[i+1] < nums[i+2]:
-        print(True)
-        break
-    else:
-        print(False)
+for num in nums:
+	if num<=i:
+		i=num
+	elif num<=j:
+		j=num
+	else:
+		print(True)
+print(False)
 
-	# if nums[i] < nums[i+1] and nums[i+1] < nums[i+2]:
-	# 	print(True)
-	# else:
-	# 	print(False)
