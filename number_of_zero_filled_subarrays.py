@@ -36,13 +36,13 @@ Explanation: There is no subarray filled with 0. Therefore, we return 0.
 
 nums = [0,0,0,2,0,0]
 
-res = 0
+total_subarrays = 0
 count = 0
 for num in nums:
 	if num == 0:
 		count += 1
 	else:
 		count = 0
-	res += count
-return res
-# print(res)
+	total_subarrays += count
+return total_subarrays
+# print(total_subarrays)
