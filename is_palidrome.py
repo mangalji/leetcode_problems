@@ -45,10 +45,3 @@ if t == t[::-1]:
 	print(True)
 else:
 	print(False)
-# # s = s.lower().replace(' ','')
-# print(s)
-# print(s[-1::-1])
-# if s == s[::-1]:
-# 	print(True)
-# else:
-# 	print(False)
