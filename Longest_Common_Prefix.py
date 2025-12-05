@@ -17,53 +17,21 @@ Output: ""
 Explanation: There is no common prefix among the input strings.
 """
 
+
 # strs = ["flower","flow","flight"]
-# # strs = ["dog","racecar","car"]
-# string = ''
-# s = ''
-# t = ''
-# for i in range(len(strs)):
-# 	# print(strs[i])
-# 	a = strs[i]
-# 	# print(a)
-# 	print('-----')
-# 	for j in range(len(a)):
-# 		s += a[j]
-
-# 		# print(a[j])
-# 		# if a[j] == :
-# 		# 	print(True)
-# 		# else:
-# 		# 	print(False)
-
-
-
-
+# strs = ["dog","racecar","car"]
 strs = ["flower","flow","flight"]
-for i in range(len(strs[0])):
- 	for string in strs[1:]:
- 		if len(string) <= i or string[i] != strs[0][i]:
- 			# return strs[0][:i]
- 			print(strs[0][:i])
 
- # return strs[0]
-print(strs[0])
+def long(strs):
+	common_prefix = ""
+	
+	for i in range(len(strs[0])):
+		for s in strs:
+			if i == len(s) or s[i] != strs[0][i]:
+			# if strs[0][i] != s[i]:
+				return common_prefix
+		common_prefix += strs[0][i]
+	
+	return common_prefix
 
-
-# 	for j in range(len(strs[i])+1):
-# 		print(strs[i][j])
-# 		a = strs[i]
-# 		print(a)
-# 		a1 = a[j]
-# 		print(a1)
-# 		b=strs[i+1]
-# 		print(b)
-# 		b1=b[j]
-# 		print(b1)
-# 		if a1 == b1:
-# 		# if strs[i][j] == strs[i+1][j]:
-# 			string += strs[i][j]
-# 		else:
-# 			continue
-
-# print(string)
+print(long(strs))
