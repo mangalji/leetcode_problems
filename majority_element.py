@@ -19,20 +19,20 @@ Output: 2
 
 # Normal/Simple/Easy solution (time taking when run)
 
-nums = [1,1,1,1,1,1,8]
-def maj(nums):
-	maj_ele = {}
-	for num in nums:
-		num_ele = num
-		occurs = nums.count(num)
-		maj_ele[num_ele] = occurs
-	# print(maj_ele)
-	for key,value in maj_ele.items():
-		if value > len(nums)/2:
-			# print(key)
-			return key
+# nums = [1,1,1,1,1,1,8]
+# def maj(nums):
+# 	maj_ele = {}
+# 	for num in nums:
+# 		num_ele = num
+# 		occurs = nums.count(num)
+# 		maj_ele[num_ele] = occurs
+# 	# print(maj_ele)
+# 	for key,value in maj_ele.items():
+# 		if value > len(nums)/2:
+# 			# print(key)
+# 			return key
 
-print(maj(nums))
+# print(maj(nums))
 
 
 # optimized solution
