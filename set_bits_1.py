@@ -1,4 +1,6 @@
-n = 2147483645
+# n = 964176192
+# n = 2147483644
+# n = 43261596
 res = ''
 final_res = 0
 
@@ -10,4 +12,6 @@ for i in res:
 	if i == '1':
 		final_res += 1
 
-print(final_res)
+# print(final_res)
+print(res)
+print(len(res))
