@@ -1,6 +1,7 @@
 # n = 964176192
 # n = 2147483644
 # n = 43261596
+n = int(input("enter the number: "))
 res = ''
 final_res = 0
 
@@ -14,4 +15,4 @@ for i in res:
 
 # print(final_res)
 print(res)
-print(len(res))
+# print(len(res))
