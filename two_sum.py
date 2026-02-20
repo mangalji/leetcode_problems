@@ -12,14 +12,4 @@ def two_sum(nums,target):
 				index_arr.append(j)
 				return index_arr
 
-# print(two_sum(nums,target))
-
-def two_sums(nums,target):
-	index_arr = []
-	for i in range(len(nums)):
-		if (nums[i] +nums[i+1]) == target:
-			index_arr.append(i)
-			index_arr.append(i+1)
-			return index_arr 
-
-print(two_sums(nums,target))
+print(two_sum(nums,target))
