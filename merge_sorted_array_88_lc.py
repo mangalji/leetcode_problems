@@ -6,7 +6,7 @@ nums2 = [2,5,6]
 n = 3
 # output = [1,2,2,3,5,6]
 
-def merge(nums1,m,nums2,n):
+def merge(nums1,m,nums2,n):	
 
 	k = m + n - 1
 	i = m - 1
